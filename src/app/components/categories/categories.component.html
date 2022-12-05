@@ -1,0 +1,32 @@
+<div class="card mt-3">
+  <div>
+    <div class="card-header text-center">
+      <h5 class="text-white">Kategoriler</h5>
+    </div>
+
+    <div class="list-group categoriesBody">
+
+
+      <a class="list-group-item list-group-item-action"  id="allCategories" routerLink="/home" (click)="selectCategory()"
+        [class.active]="displayAll">
+
+        <i class="fa fa-list-ul" aria-hidden="true"></i>
+        All Categories
+      </a>
+
+
+
+
+      <a id="categories" *ngFor="let item of categories" routerLink="/home/category/{{item.id}}"
+        [class.active]="!displayAll && selectedCategory.id==item.id" (click)="selectCategory(item)"
+        class="list-group-item list-group-item-action mt-3">
+        <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+        {{item.name | titlecase}}
+
+      </a>
+
+
+    </div>
+
+  </div>
+</div>

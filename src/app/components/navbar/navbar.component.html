@@ -1,0 +1,26 @@
+<header class="border-bottom fixed-top">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+        <img class="logo" src="../../../assets/images/3514981.jpg" alt="logo">
+      </a>
+
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 ms-5">
+        <li><a routerLink="/home" class="nav-link px-2 link-dark">Home</a></li>
+        <li><a routerLink="/products" routerLinkActive="router-link-active"  class="nav-link px-2 link-dark">Products</a></li>
+      </ul>
+
+      <div class="dropdown text-end">
+        <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <i style="font-size:larger;" class="fa fa-user-circle" aria-hidden="true"></i>
+        </a>
+        <ul class="dropdown-menu text-small">
+          <li><a routerLink="/login" class="dropdown-item" href="#">Login</a></li>
+          <li><a routerLink="/register" class="dropdown-item" href="#">Register</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="/">Sign out</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
